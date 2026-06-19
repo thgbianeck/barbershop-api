@@ -1,0 +1,4 @@
+// gere um arquivo .gitignore para um projeto Node.js
+node_modules/
+dist/
+.env   
