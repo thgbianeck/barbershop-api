@@ -18,6 +18,11 @@ app.get('/agendamentos', (req, res) => {
   res.json(agendamentos); // Envia uma resposta JSON
 });
 
+// Nova rota para verificar o status da API
+app.get('/status', (req, res) => {
+  res.json({ status: 'ok', version: '1.0.0' });
+});
+
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
