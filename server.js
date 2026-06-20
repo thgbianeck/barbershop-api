@@ -22,4 +22,5 @@ app.get('/agendamentos', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
   console.log(`Acesse: http://localhost:${PORT}`); // Informa o endereço para acessar a API
+  console.log('API BarberShop inicializada com sucesso!');
 });
