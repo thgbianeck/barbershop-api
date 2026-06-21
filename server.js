@@ -18,6 +18,7 @@ app.get('/agendamentos', (req, res) => {
   res.json(agendamentos); // Envia uma resposta JSON
 });
 
+// Comentário: Você pode adicionar mais rotas aqui, como POST /agendamentos para criar um novo agendamento, etc.
 // Nova rota para verificar o status da API
 app.get('/status', (req, res) => {
   res.json({ status: 'ok', version: '1.0.0' });
