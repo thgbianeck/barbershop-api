@@ -24,6 +24,12 @@ app.get('/status', (req, res) => {
   res.json({ status: 'ok', version: '1.0.0' });
 });
 
+// Rota para autenticação (login)
+app.post('/login', (req, res) => {
+  // Lógica de autenticação virá aqui. Por enquanto, apenas um placeholder.
+  res.status(200).json({ message: 'Endpoint de login (em construção)' });
+});
+
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
