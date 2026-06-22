@@ -27,6 +27,12 @@ app.get('/status', (req, res) => {
 // Rota para cadastro de usuários
 app.post('/usuarios', (req, res) => {
   res.status(201).json({ message: 'Endpoint de cadastro de usuário (em desenvolvimento)' });
+// Rota para autenticação (login)
+});  
+
+app.post('/login', (req, res) => {
+  // Lógica de autenticação virá aqui. Por enquanto, apenas um placeholder.
+  res.status(200).json({ message: 'Endpoint de login (em construção)' });
 });
 
 // Inicia o servidor
