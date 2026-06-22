@@ -18,6 +18,7 @@ app.get('/agendamentos', (req, res) => {
   res.json(agendamentos); // Envia uma resposta JSON
 });
 
+// TODO: Adicionar validação de dados para agendamentos
 // Comentário: Você pode adicionar mais rotas aqui, como POST /agendamentos para criar um novo agendamento, etc.
 // Nova rota para verificar o status da API
 app.get('/status', (req, res) => {
