@@ -42,6 +42,11 @@ app.post('/login', (req, res) => {
   res.status(200).json({ message: 'Endpoint de login (em construção)' });
 });
 
+// Rota para logout
+app.post('/logout', (req, res) => {
+  res.json({ message: 'Usuário deslogado com sucesso' });
+});
+
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
