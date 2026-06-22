@@ -47,6 +47,12 @@ app.post('/logout', (req, res) => {
   res.json({ message: 'Usuário deslogado com sucesso' });
 });
 
+// Rota para cancelar um agendamento
+app.delete('/agendamentos/:id/cancelar', (req, res) => {
+  const { id } = req.params;
+  res.json({ message: `Agendamento ${id} cancelado com sucesso` });
+});
+
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
