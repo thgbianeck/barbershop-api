@@ -18,10 +18,39 @@ app.get('/agendamentos', (req, res) => {
   res.json(agendamentos); // Envia uma resposta JSON
 });
 
+// TODO: Adicionar validação de dados para agendamentos
+// Rota para detalhes de um agendamento específico
+app.get('/agendamentos/:id', (req, res) => {
+  const { id } = req.params;
+  res.json({ message: `Detalhes do agendamento ${id}` });
+});
+
 // Comentário: Você pode adicionar mais rotas aqui, como POST /agendamentos para criar um novo agendamento, etc.
 // Nova rota para verificar o status da API
 app.get('/status', (req, res) => {
   res.json({ status: 'ok', version: '1.0.0' });
+});
+
+// Rota para cadastro de usuários
+app.post('/usuarios', (req, res) => {
+  res.status(201).json({ message: 'Endpoint de cadastro de usuário (em desenvolvimento)' });
+// Rota para autenticação (login)
+});  
+
+app.post('/login', (req, res) => {
+  // Lógica de autenticação virá aqui. Por enquanto, apenas um placeholder.
+  res.status(200).json({ message: 'Endpoint de login (em construção)' });
+});
+
+// Rota para logout
+app.post('/logout', (req, res) => {
+  res.json({ message: 'Usuário deslogado com sucesso' });
+});
+
+// Rota para cancelar um agendamento
+app.delete('/agendamentos/:id/cancelar', (req, res) => {
+  const { id } = req.params;
+  res.json({ message: `Agendamento ${id} cancelado com sucesso` });
 });
 
 // Inicia o servidor

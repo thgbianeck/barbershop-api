@@ -1,8 +1,8 @@
 # BarberShop API
 
-Esta é uma API Node.js para gerenciar agendamentos de barbearias.
-Ela serve como projeto prático para o curso de Git para Grandes Aplicações.
-Este é o projeto da BarberShop API, desenvolvido durante o curso de Git.
+Esta é uma API Node.js para gerenciar agendamentos de barbearias. 
+Ela serve como projeto prático para o curso de Git para Grandes Aplicações. 
+Este é o projeto da BarberShop API, desenvolvido durante o curso de Git. 
 
 ## Endpoints
 - GET /: Retorna uma mensagem de boas-vindas.
