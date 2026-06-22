@@ -1,4 +1,11 @@
-// gere um arquivo .gitignore para um projeto Node.js
+# Node.js
 node_modules/
-dist/
-.env   
+npm-debug.log
+.env
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
