@@ -24,6 +24,11 @@ app.get('/status', (req, res) => {
   res.json({ status: 'ok', version: '1.0.0' });
 });
 
+// Rota para cadastro de usuários
+app.post('/usuarios', (req, res) => {
+  res.status(201).json({ message: 'Endpoint de cadastro de usuário (em desenvolvimento)' });
+});
+
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`); // Loga uma mensagem quando o servidor inicia
